@@ -20,8 +20,106 @@
 <p>3.請摘要出下列內容: (放入英文文章內容)</p>
 <p>4.請列出上述文章中的重要的英文單字與解釋, 以及出現在文句中的用法:</p>
 <p>5.請詳細說明如何採手動方式在 Webots 建立下列場景:</p>
-<p>6.希望可以手把手一步步說明該如何利用圖形介面 menu 建立這個場景, 過程中有那些要點必須特別注意?</p><h3>1.</h3>
+<p>6.希望可以手把手一步步說明該如何利用圖形介面 menu 建立這個場景, 過程中有那些要點必須特別注意?</p>
+<h3>1.</h3>
+<p>Webots 是由 Cyberbotics Ltd. 開發的開源、多平台 3D 機器人模擬器，廣泛應用於工業、教育和研究領域。 </p>
+<p><span style="color: #000000; background-color: #ffff00;">主要特點</span><strong>：</strong></p>
+<ul>
+<li>
+<p><strong>跨平台支持</strong>：Webots 可在 Windows、Linux 和 macOS 等多個平台上運行，滿足不同使用者的需求。 </p>
+</li>
+<li>
+<p><strong>多語言編程</strong>：使用者可使用 C、C++、Python、Java、MATLAB 等語言編寫機器人控制程式，提供靈活的開發環境。</p>
+</li>
+<li>
+<p><strong>高擬真度物理模擬</strong>：Webots 使用 ODE（Open Dynamics Engine）來檢測碰撞並模擬剛體動力學，精確模擬物體的速度、慣性和摩擦等物理特性。</p>
+</li>
+<li>
+<p><strong>豐富的感測器與致動器支持</strong>：如 LIDAR、雷達、接近感測器、光感測器、觸覺感測器、GPS、加速度計、攝影機、發射器和接收器、伺服馬達（旋轉和線性）、位置和力感測器、LED、夾持器、陀螺儀、指南針、IMU 等。</p>
+</li>
+<li>
+<p><strong>內建多種機器人模型</strong>：包括 AIBO、NAO、Pioneer 等，方便使用者直接使用或修改。 </p>
+</li>
+</ul>
+<p><span style="background-color: #ffff00;">應用領域</span><strong>：</strong></p>
+<ul>
+<li>
+<p><strong>快速原型設計</strong>：適用於輪式和足式機器人的快速原型設計。</p>
+</li>
+<li>
+<p><strong>機器人運動研究</strong>：用於研究機器人的運動模式和控制策略。</p>
+</li>
+<li>
+<p><strong>群體智能</strong>：進行多機器人協作和群體行為模擬。 </p>
+</li>
+<li>
+<p><strong>人工生命與進化機器人學</strong>：模擬自適應行為和自我重構模組化機器人。 </p>
+</li>
+<li>
+<p><strong>計算機視覺實驗環境</strong>：提供計算機視覺算法的測試平台。 </p>
+</li>
+<li>
+<p><strong>教學與機器人編程競賽</strong>：廣泛應用於教育領域和各類機器人競賽。 </p>
+</li>
+</ul>
+<p>總而言之，Webots 作為一款功能強大的機器人模擬器，為使用者提供了從設計到測試的全方位工具，廣泛應用於工業、教育和研究領域。</p>
+<p>擷取自ChatGPT</p>
 <h3>2.</h3>
+<p data-end="133" data-start="87">這些是文章裡常見的重要詞彙和短語，它們可以幫助你更容易理解 Webots 的功能和應用。</p>
+<ol data-end="1645" data-start="135">
+<li data-end="215" data-start="135">
+<p data-end="215" data-start="138"><strong data-end="173" data-start="138">robot</strong><strong> simulation</strong><strong data-end="173" data-start="138"> software suite</strong> - 機器人模擬軟體套件<br data-end="188" data-start="185"/> → 這是一整套專門用來模擬機器人的軟體工具。</p>
+</li>
+<li data-end="306" data-start="217">
+<p data-end="306" data-start="220"><strong data-end="253" data-start="220">rapid prototyping environment</strong> - 快速原型環境<br data-end="265" data-start="262"/> → 讓使用者可以快速建立和測試機器人的虛擬模型，不用真的去造一台機器人。</p>
+</li>
+<li data-end="382" data-start="308">
+<p data-end="382" data-start="311"><strong data-end="334" data-start="311">physical properties</strong> - 物理特性<br data-end="344" data-start="341"/> → 指機器人在模擬環境中的物理行為，比如重量、摩擦力、關節運動等。</p>
+</li>
+<li data-end="447" data-start="384">
+<p data-end="447" data-start="387"><strong data-end="405" data-start="387">motion schemes</strong> - 運動方案<br data-end="415" data-start="412"/> → 機器人的移動方式，比如輪子、雙腿行走，甚至是飛行。</p>
+</li>
+<li data-end="548" data-start="449">
+<p data-end="548" data-start="452"><strong data-end="477" data-start="452">sensors and actuators</strong> - 感測器和執行器<br data-end="490" data-start="487"/> → 感測器負責蒐集環境資訊 (像是距離感測器、攝影機)，而執行器則讓機器人執行動作 (像是馬達、驅動輪)。</p>
+</li>
+<li data-end="663" data-start="550">
+<p data-end="663" data-start="553"><strong data-end="601" data-start="553">robot models and controller program examples</strong> - 機器人模型與控制器程式範例<br data-end="620" data-start="617"/> → Webots 裡已經有很多現成的機器人範例和控制程式，讓新手更容易上手。</p>
+</li>
+<li data-end="763" data-start="665">
+<p data-end="763" data-start="668"><strong data-end="705" data-start="668">interface with real mobile robots</strong> - 與真實移動機器人的接口<br data-end="722" data-start="719"/> → Webots 不只是模擬，還可以讓你的程式實際控制真實世界的機器人！</p>
+</li>
+<li data-end="858" data-start="765">
+<p data-end="858" data-start="768"><strong data-end="798" data-start="768">adaptive behavior research</strong> - 自適應行為研究<br data-end="811" data-start="808"/> → 研究如何讓機器人能夠適應不同的環境，比如用 AI 讓它學習如何走路或避開障礙物。</p>
+</li>
+<li data-end="923" data-start="860">
+<p data-end="923" data-start="863"><strong data-end="885" data-start="863">genetic algorithms</strong> - 遺傳演算法<br data-end="896" data-start="893"/> → 靠著類似生物演化的方式來優化機器人行為。</p>
+</li>
+<li data-end="997" data-start="925">
+<p data-end="997" data-start="929"><strong data-end="948" data-start="929">neural networks</strong> - 神經網路<br data-end="958" data-start="955"/> → 一種模仿人類大腦學習方式的 AI 技術，可以讓機器人學習和決策。</p>
+</li>
+<li data-end="1080" data-start="999">
+<p data-end="1080" data-start="1003"><strong data-end="1035" data-start="1003">artificial intelligence (AI)</strong> - 人工智慧<br data-end="1045" data-start="1042"/> → 讓機器人變得更聰明，能夠自己做決定，而不只是照指令執行。</p>
+</li>
+<li data-end="1163" data-start="1082">
+<p data-end="1163" data-start="1086"><strong data-end="1110" data-start="1086">3D computer graphics</strong> - 3D 電腦圖形學<br data-end="1124" data-start="1121"/> → 用來設計 Webots 世界裡的機器人和環境，讓它看起來更真實。</p>
+</li>
+<li data-end="1279" data-start="1165">
+<p data-end="1279" data-start="1169"><strong data-end="1215" data-start="1169">virtual reality modeling language (VRML97)</strong> - 虛擬實境建模語言 (VRML97)<br data-end="1238" data-start="1235"/> → 這是一種專門用來建立 3D 模型的語言，在 Webots 裡很有用！</p>
+</li>
+<li data-end="1380" data-start="1281">
+<p data-end="1380" data-start="1285"><strong data-end="1316" data-start="1285">GitHub Discussions / Issues</strong> - GitHub 討論區 / 問題回報<br data-end="1339" data-start="1336"/> → 如果你在 Webots 遇到問題，可以到這些地方請求幫助或回報錯誤。</p>
+</li>
+<li data-end="1448" data-start="1382">
+<p data-end="1448" data-start="1386"><strong data-end="1407" data-start="1386">robot controllers</strong> - 機器人控制器<br data-end="1419" data-start="1416"/> → 這是讓機器人運作的核心程式，就像是它的大腦。</p>
+</li>
+<li data-end="1554" data-start="1450">
+<p data-end="1554" data-start="1454"><strong data-end="1479" data-start="1454">privileged operations</strong> - 特權操作<br data-end="1489" data-start="1486"/> → 一些只有「主管控制器」(Supervisor Controller) 才能執行的特殊操作，比如隨機移動機器人或錄影。</p>
+</li>
+<li data-end="1645" data-start="1556">
+<p data-end="1645" data-start="1560"><strong data-end="1585" data-start="1560">supervisor controller</strong> - 主管控制器<br data-end="1596" data-start="1593"/> → 一種比較高級的控制器，可以做一般機器人不能做的事情，像是直接改變環境或跳過物理規則。</p>
+<strong data-end="1802" data-start="1731"></strong>
+</li>
+</ol>
 <h3>3.</h3>
 <h3>4.</h3>
 <h3>5.</h3>
